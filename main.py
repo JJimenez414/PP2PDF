@@ -99,7 +99,7 @@ def gmail_send_message(files, email):
         message.set_content("This is automated draft mail")
 
         message["To"] = email
-        message["From"] = "joseangel130414@gmail.com"
+        message["From"] = "[REPLACE EMAIL]"
         message["Subject"] = "IGNORE: PPTX to PYTHON"
 
         # loop through the list of pdf files
@@ -144,4 +144,4 @@ for file in files:
     PDF_files.append(convert(file, file_output_name) + '.pdf') # convert file  
 
 # send message
-gmail_send_message(PDF_files, 'joseangel130414@gmail.com')
+gmail_send_message(PDF_files, '[REPLACE WITH EMAIL]')
